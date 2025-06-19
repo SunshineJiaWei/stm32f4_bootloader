@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "*.h": "c" // 所有的.h文件按C文件来处理
+    }
+}
