@@ -4,6 +4,7 @@
             "name": "stm32f4_boot",
             "includePath": [
                 "boot",
+                "component/easylogger/inc",
                 "platform/cmsis/core",
                 "platform/cmsis/device",
                 "platform/driver/inc"
@@ -11,7 +12,8 @@
             "defines": [
                 "STM32F40_41xxx",
                 "USE_STDPERIPH_DRIVER",
-                "HSE_VALUE=8000000"
+                "HSE_VALUE=8000000",
+                "DEBUG"
             ],
             "compilerPath": "${workspaceFolder}/tools/toolchain/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc",
             "intelliSenseMode": "linux-gcc-arm",

@@ -30,7 +30,7 @@ void bl_delay_ms(uint32_t ms)
  * @brief 返回上电后至今的毫秒数
  * 
  */
-void bl_now(void)
+uint32_t bl_now(void)
 {
     return ticks;
 }
