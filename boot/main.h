@@ -5,7 +5,8 @@
 #include <stdint.h>
 
 
-void bl_lowlevel_init();
+void bl_lowlevel_init(void);
+void bootloader_main(uint32_t delay_ms);
 
 void bl_delay_init(void);
 void bl_delay_ms(uint32_t ms);

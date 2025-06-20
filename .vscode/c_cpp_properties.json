@@ -4,6 +4,8 @@
             "name": "stm32f4_boot",
             "includePath": [
                 "boot",
+                "boot/led",
+                "boot/button",
                 "component/easylogger/inc",
                 "platform/cmsis/core",
                 "platform/cmsis/device",

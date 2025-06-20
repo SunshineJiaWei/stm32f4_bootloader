@@ -56,6 +56,8 @@ P_DEF += DEBUG
 endif
 
 s_inc-y = boot \
+		  boot/led \
+		  boot/button \
 		  component/crc \
 		  component/easylogger/inc \
 		  component/ringbuffer \
@@ -63,7 +65,10 @@ s_inc-y = boot \
 		  platform/cmsis/device \
 		  platform/driver/inc
 s_dir-y = boot \
+		  boot/led \
+		  boot/button \
 		  boot/override \
+		  boot/utils \
 		  component/crc \
 		  component/ringbuffer \
 		  platform/cmsis/device \
