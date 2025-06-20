@@ -622,7 +622,7 @@ typedef struct
  */
 typedef struct
 {
-  __IO uint32_t CTRL;                    /*!< Offset: 0x000 (R/W)  SysTick Control and Status Register */
+  __IO uint32_t CTRL;                    /*!< Offset: 0x000 (R/W)  SysTick Control and Sattus Register */
   __IO uint32_t LOAD;                    /*!< Offset: 0x004 (R/W)  SysTick Reload Value Register       */
   __IO uint32_t VAL;                     /*!< Offset: 0x008 (R/W)  SysTick Current Value Register      */
   __I  uint32_t CALIB;                   /*!< Offset: 0x00C (R/ )  SysTick Calibration Register        */
