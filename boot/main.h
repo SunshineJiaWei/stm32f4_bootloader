@@ -3,6 +3,9 @@
 
 
 #include <stdint.h>
+#include "led.h"
+#include "button.h"
+#include "uart.h"
 
 
 void bl_lowlevel_init(void);

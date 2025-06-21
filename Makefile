@@ -58,6 +58,7 @@ endif
 s_inc-y = boot \
 		  boot/led \
 		  boot/button \
+		  boot/uart \
 		  component/crc \
 		  component/easylogger/inc \
 		  component/ringbuffer \
@@ -69,6 +70,7 @@ s_dir-y = boot \
 		  boot/button \
 		  boot/override \
 		  boot/utils \
+		  boot/uart \
 		  component/crc \
 		  component/ringbuffer \
 		  platform/cmsis/device \

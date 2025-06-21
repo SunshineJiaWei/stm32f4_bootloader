@@ -3,8 +3,7 @@
 #include <stdio.h>
 #include "stm32f4xx.h"
 #include "main.h"
-#include "led.h"
-#include "button.h"
+
 
 
 #define LOG_TAG     "main"
@@ -17,10 +16,9 @@ int main(void)
     bl_lowlevel_init();
 
     bl_delay_init();
-
     bl_led_init(&led0);
-
     bl_button_init();
+    bl_uart_init();
 
 #if DEBUG
     elog_init();

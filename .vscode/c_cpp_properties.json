@@ -6,8 +6,10 @@
                 "boot",
                 "boot/led",
                 "boot/button",
+                "boot/uart",
                 "component/easylogger/inc",
                 "component/crc",
+                "component/ringbuffer",
                 "platform/cmsis/core",
                 "platform/cmsis/device",
                 "platform/driver/inc"
