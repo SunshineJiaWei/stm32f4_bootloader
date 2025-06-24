@@ -9,7 +9,7 @@
 #define FLAHS_ARG_SIZE          16 * 1024
 
 #define FLASH_APP_ADDRESS       0x08010000
-#define FLASH_APP_SIZE          192 * 1024
+#define FLASH_APP_SIZE          320 * 1024
 
 
 #endif /* __BL_FLASH_LAYOUT_H */

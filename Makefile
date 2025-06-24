@@ -23,7 +23,7 @@ endif
 
 # 生成配置
 # DEBUG ?= $(CONFIG_DEBUG)
-DEBUG ?= y
+DEBUG ?= 
 V ?=
 
 # Toolchain
@@ -59,6 +59,8 @@ s_inc-y = boot \
 		  boot/led \
 		  boot/button \
 		  boot/uart \
+		  boot/flash \
+		  boot/arginfo \
 		  component/crc \
 		  component/easylogger/inc \
 		  component/ringbuffer \
@@ -71,6 +73,8 @@ s_dir-y = boot \
 		  boot/override \
 		  boot/utils \
 		  boot/uart \
+		  boot/flash \
+		  boot/arginfo \
 		  component/crc \
 		  component/ringbuffer \
 		  platform/cmsis/device \

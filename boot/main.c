@@ -38,6 +38,11 @@ int main(void)
         trap_boot = true;
         log_i("button pressed, trap into boot");
     }
+    else if (!verify_application())
+    {
+        log_w("application verify failed, trap into boot");
+        trap_boot = true;
+    }
 
     if (trap_boot)
     {

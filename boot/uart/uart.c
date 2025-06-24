@@ -51,6 +51,21 @@ void bl_uart_init(void)
     uart_lowlevel_init();
 }
 
+void bl_uart_write(uint8_t *data, uint16_t len)
+{
+    // 确保这一帧数据发送前,TC标志是未置位的，以及确保正确等待当前数据的完整发送
+    USART_ClearFlag(USART2, USART_FLAG_TC);
+
+    for (uint16_t i = 0; i < len; i ++)
+    {
+        while (USART_GetFlagStatus(USART2, USART_FLAG_TXE) != SET);
+        USART_SendData(USART2, data[i]);
+    }
+
+    // TC=1，之后才可禁止 USART 或使微控制器进入低功率模式
+    while (USART_GetFlagStatus(USART2, USART_FLAG_TC) != SET);
+}
+
 void bl_uart_recv_cb_register(bl_uart_recv_cb_t callback)
 {
     bl_uart_recv_cb = callback;
